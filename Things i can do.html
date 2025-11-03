@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/816ea91a35.js" crossorigin="anonymous"></script>
+    <!-- Box icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Joey Perkins portfolio things</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="img/Logo.png" alt="" id="logo-img">
+            <a href="#" id="logo-text">joeythecat4</a>
+        </div>
+        <ul>
+			<li><a href="about.html" class="active">About</a></li>
+			<li><a href="Things i can do.html">Things I Can Do</a></li>
+			<li><a href="projets.html">projets</a></li>
+            <li><a href="my cerifcations.html">my cerifcations</a></li>
+            <li><a href="Contact Me.html">Contact Me</a></li>
+        </ul>
+        <div id="Mode">
+            <div id="switch"></div>
+            <label id="inner-text">Dark</label>
+        </div>
+    </nav>
+        <div class="text-center">
+		    <h3>There is some of my skills:</h3>
+            <br>
+            <p><span><a class="fa-solid fa-code"></span></a> some <span>coding</span></p>
+            <p><span><a class="fa-solid fa-network-wired"></span></a> Make and design <span>networks</span></p>
+            <p><span><a class="fa-solid fa-camera"></span></a> make and design <span>CCTV</span></p>
+            <p><span><a class="fa-brands fa-docker"></span></a> deploy <span>docker</span> container</p>
+            <p><span><a class="fa-brands fa-linux"></span></a> work with <span>linux / Unix / Unix-like</span> Operating systems</p>
+            <p><span><a class="fa-brands fa-windows"></span></a> work with <span>windows</span> XP to 11</p>
+            <p><span><a class="fa-solid fa-pencil"></span></a> can make <span>art</span> on my drawing tablet</p>
+            <p><span><a class="fa-solid fa-clapperboard"></span></a> <span>Video edit</span> with Blackmagic DaVinci Resolve</p>
+            <p><span><a class="fa-solid fa-volume-high"></span></a> make and disign sound sytems</p>
+            <p><span><a class="fa-solid fa-cube"></span></a> <span>3D Print with Filament</span> / FDM (Fused Deposition Modelling)</p>
+            <p><span><a class="fa-solid fa-cubes"></span></a> <span>3D Print with Resin</span> / DLP (Digital Light Processing)</p>
+            <p><span><a class="fa-solid fa-robot"></span></a> Run local <span>AI</span> models</p>
+            <p><span><a class="fa-solid fa-mobile"></span></a> set up <span>Android</span> phones</p>
+            <p><span><a class="fa-solid fa-cart-flatbed"></span></a> <span>Stock</span> control systems</p>
+            <p><span><a class="fa-solid fa-kit-medical"></span></a> <span>First Response</span> trained (Expiry date 20 Jan 2027)</p>
+            <p><span><a class="fa-solid fa-question"></span></a> more</p>
+        </div>
+    </div>
+    <div class="footer">
+        <small>
+           Copyright © 2025 Joey Perkins. All Rights Reserved.
+         </small>
+    </div>
+    <script>
+        //const Mode_icon = document.getElementById('Mode');
+        const Switch_Mode = document.getElementById('switch');
+        const Inner_text = document.getElementById('inner-text');
+        Mode.onclick = function(){
+            document.body.classList.toggle('dark-mode');
+            Switch_Mode.classList.toggle('switch-active');
+            Inner_text.classList.toggle('Inner-text-active');
+            if(document.body.classList.contains('dark-mode')){
+                Inner_text.innerHTML = 'Light';
+            }
+            else{
+                Inner_text.innerHTML = 'Dark';
+            }
+        }
+    </script>
+</body>
+</html>

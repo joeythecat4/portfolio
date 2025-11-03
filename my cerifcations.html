@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/816ea91a35.js" crossorigin="anonymous"></script>
+    <!-- Box icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Joey Perkins portfolio cerifcations</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="img/Logo.png" alt="" id="logo-img">
+            <a href="#" id="logo-text">joeythecat4</a>
+        </div>
+        <ul>
+			<li><a href="about.html" class="active">About</a></li>
+			<li><a href="Things i can do.html">Things I Can Do</a></li>
+			<li><a href="projets.html">projets</a></li>
+            <li><a href="my cerifcations.html">my cerifcations</a></li>
+            <li><a href="Contact Me.html">Contact Me</a></li>
+        </ul>
+        <div id="Mode">
+            <div id="switch"></div>
+            <label id="inner-text">Dark</label>
+        </div>
+    </nav>
+        <div class="text-center">
+		    <h3>There is list of my cerifcations:</h3>
+            <br>
+            <span>GCSE Maths</span> </h1>: Grade 5</h1>
+            <br>
+            <span>Functional Skills English Level 1</span> </h1>: passed</h1>
+            <br>
+            <span>Functional Skills English Level 2</span> </h1>: WIP</h1>
+            <br>
+            <span>Scouts  Wood Badge </span> </h1>: WIP</h1>
+        </div>
+    </div>
+    <div class="footer">
+        <small>
+           Copyright © 2025 Joey Perkins. All Rights Reserved.
+         </small>
+    </div>
+    <script>
+        //const Mode_icon = document.getElementById('Mode');
+        const Switch_Mode = document.getElementById('switch');
+        const Inner_text = document.getElementById('inner-text');
+        Mode.onclick = function(){
+            document.body.classList.toggle('dark-mode');
+            Switch_Mode.classList.toggle('switch-active');
+            Inner_text.classList.toggle('Inner-text-active');
+            if(document.body.classList.contains('dark-mode')){
+                Inner_text.innerHTML = 'Light';
+            }
+            else{
+                Inner_text.innerHTML = 'Dark';
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/816ea91a35.js" crossorigin="anonymous"></script>
+    <!-- Box icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style2.css">
+    <title>Joey Perkins portfolio projets</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="img/Logo.png" alt="" id="logo-img">
+            <a href="#" id="logo-text">joeythecat4</a>
+        </div>
+        <ul>
+			<li><a href="about.html" class="active">About</a></li>
+			<li><a href="Things i can do.html">Things I Can Do</a></li>
+			<li><a href="projets.html">projets</a></li>
+            <li><a href="my cerifcations.html">my cerifcations</a></li>
+            <li><a href="Contact Me.html">Contact Me</a></li>
+        </ul>
+        <div id="Mode">
+            <div id="switch"></div>
+            <label id="inner-text">Dark</label>
+        </div>
+    </nav>
+        <div class="text-center">
+		    <h3>There is list of some of my projets:</h3>
+            <br><br>
+    </nav>
+<style>
+</style>
+</head>
+<div style="clear: both;">  
+  <div style="float: left; margin-right 1em;">
+    <img src="img/pic01.jpg" alt=""width="300" height="300">
+  </div>
+  <div>
+    <div class="text-center">
+    <h2>My Home Lab / Server Rack</h2>
+    <p>This is my home lab / server rack<br>
+        at the top there is a 48-50 port poe+ (IEEE 802.3at)<br>
+        under that is a Unifi CloudKey+ and under that is a Unifi NVR (CCTV)<br>
+        Next it a Home Assistant Yellow Runing Home Assistant OS and<br>
+        to the right of that is a minisforum ms-01 running Proxmox OS<br>
+        At the bottom is my NAS (Network-Attached Storage) running TrueNAS SCALE<br>
+    </p>
+  </div>
+</div>
+</style>
+</head>
+<div style="clear: both;"> 
+  <div style="float: left; margin-right;">
+    <img src="img/pic02.jpg" alt=""width="300" height="300">
+  </div>
+  <div>
+    <div class="text-center">
+    <h2>Seven Studios server rack 
+      <img src="https://sevenstudios.co.uk/cdn/shop/files/7_STUDIOS_LOGO_PNG_TRANSPARENT.png?v=1745590509" height="32px">
+      <img src="https://sevenstudios.co.uk/cdn/shop/files/Seven_Studios_Doncaster_Podcast_Content_Studio_Logo.png?crop=center&amp;height=32&amp;v=1733240792&amp;width=32" height="32px"></h2> 
+    <p>This is SEVEN STUDIOS (DONCASTER) server rack<br>
+        After making their internet working after months battling virgin media business<br>
+        with no internet that i got sorted with a temp laptop running OPNsense<br>
+        I suggested  they get a server rack as their equipment from the ISP is 19" server standard<br>
+        so, I suggested Unifi Cloud Gateway Fiber as they were already running a Unifi CloudKey+ with 3 AP<br>
+        and they have a Synology NAS with 10GbE network card in it and a QNAP 10GbE / 2.5GbE switch<br>
+    </p>
+  </div>
+</div>
+<div style="clear: both;">
+  <div style="float: left; margin-right 1em;">
+    <img src="img/pic03.jpg" alt=""width="300" height="300">
+  </div>
+  <div>
+    <div class="text-center">
+    <h2>Melbourne Raceway
+      <img src="https://straightliners.events/wp-content/themes/straightliners/images/favicon.png?v=1.1" height="32px">
+    </h2>
+    <p>This is Melbourne Raceway (Straightliners) network<br>
+        During COVID-19 me and a some of the other racers help build<br>
+        Melbourne Raceway and they needed a network but as there is no good way of<br>
+        getting internet so set up 2 "temporary" Routers and bridge them<br>
+        between the tower and the office to their many laptops and a pc for all there needs<br>
+        there is also a HDMI to ethernet and a few spitters so the office can see what happing<br>
+    </p>
+  </div>
+</div>
+<div style="clear: both;">
+  <div style="float: left; margin-right 1em;">
+    <img src="img/pic05.jpg" alt=""width="300" height="300">
+  </div>
+  <div>
+    <div class="text-center">
+    <h2>Travel network</h2>
+    <p>This is Travel network<br>
+        The GL.iNet Beryl AX (GL-MT3000) is the Router<br>
+        ZimaBlade is a nas and server that has<br>
+        Offline copy of all the English Wikipedia with photos<br>
+        and other Wiki's and the sort<br>
+        can run for a few hours on the 25000mAh Power Bank<br>
+    </p>
+  </div>
+</div>
+    <div class="footer">
+        <small>
+           Copyright © 2025 Joey Perkins. All Rights Reserved.
+         </small>
+    </div>
+    <script>
+        //const Mode_icon = document.getElementById('Mode');
+        const Switch_Mode = document.getElementById('switch');
+        const Inner_text = document.getElementById('inner-text');
+        Mode.onclick = function(){
+            document.body.classList.toggle('dark-mode');
+            Switch_Mode.classList.toggle('switch-active');
+            Inner_text.classList.toggle('Inner-text-active');
+            if(document.body.classList.contains('dark-mode')){
+                Inner_text.innerHTML = 'Light';
+            }
+            else{
+                Inner_text.innerHTML = 'Dark';
+            }
+        }
+    </script>
+</body>
+</html>
