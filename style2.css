@@ -232,7 +232,7 @@ button:hover{
   column-gap: 10px;
 }
 
-.footer {
+/* .footer {
   position: fixed;
   left: 0;
   bottom: 0;
@@ -240,6 +240,13 @@ button:hover{
   color: var(--secondary-color);
   transition: color 1s;
   text-align: center;
+}   */
+   
+.footer {
+  text-align: center;
+  padding: 5px;
+  /* background-color: #abbaba; */
+  color: (--secondary-color);
 }
 
 .container {
